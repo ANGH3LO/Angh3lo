@@ -1,75 +1,59 @@
-/* .navbar {
-    background: linear-gradient(to bottom, #0317cfc9, #0317cfc9 80%, rgba(3, 201, 207, 0)); } */
-
-
-    body {
-        overflow-x: hidden; /* Oculta el scroll horizontal */
-        margin: 0;
-        
-    }
+body {
+    overflow-x: hidden; 
+    margin: 0;
     
-    img {
-        max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
-        height: auto; /* Mantiene la relación de aspecto */
-    }
-    
-    .navbar {
-        background: linear-gradient(to bottom, #76634c  , #9c9083  80%, rgba(0, 95, 115, 0));
-    }
-    
+}
 
+img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #76634c  , #9c9083  80%, rgba(0, 95, 115, 0));
+}
+    
 .navbar-nav li{
     margin: 0 10px;
 }
 
-
-
 .navbar-nav .nav-link {
-    font-size: 2vw; /* Cambiado de rem a vw para adaptarse al tamaño de la pantalla */
+    font-size: 2vw; 
     font-weight: bold;
     font-family: Georgia;
 }
 
-/* Nueva consulta de medios para pantallas pequeñas */
+
 @media (max-width: 576px) {
     .navbar-nav .nav-link {
-        font-size: 1.5rem; /* Ajusta el tamaño según lo necesites */
+        font-size: 1.5rem; 
     }
 }
 
 .nav-link {
-    color: #000000; /* Color de los enlaces */
+    color: #000000; 
 }
 
 .navbar-toggler {
-    color: #000000; /* Color del botón del menú */
+    color: #000000; 
 }
 
 
 .navbar-brand img {
-    width: 140px; /* Ancho del logo ANGEL */
-    height: 40px; /* Altura del logo */
+    width: 140px; 
+    height: 40px; 
 }
-
-
-
-
-
 
 .icon-size {
-    width: 60px; /* O el tamaño que desees iconos javaspython*/
-    height: auto; /* Mantiene la proporción */
+    width: 60px; 
+    height: auto;
 }
 
-
-/* Empieza el contenedor principal de las barras de progreso */
 .progress-container {
     width: 80%;
     margin: 20px auto;
 }
-/* Termina el contenedor principal de las barras de progreso */
 
-/* Empieza el estilo de la barra de progreso */
 .progress-bar {
     position: relative;
     width: 100%;
@@ -80,23 +64,6 @@
     margin-bottom: 20px;
     box-shadow: 2px 2px 0px #000;
 }
-/* Termina el estilo de la barra de progreso */
-
-/* Empieza el relleno de la barra de progreso */
-
-/* .progress-bar-fill {
-    height: 100%;
-    border-radius: 5px;
-    background-size: 50px 50px;
-    background-image: repeating-linear-gradient(
-        45deg,
-        rgba(0,0,0,0.1),
-        rgba(0,0,0,0.1) 5px,
-        transparent 5px,
-        transparent 10px
-    );
-    position: relative;
-} */
 
 .progress-bar-fill {
     height: 100%;
@@ -110,16 +77,12 @@
         transparent 10px
     );
     position: relative;
-    display: flex; /* Agregar para usar flexbox */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    color: black; /* Cambia el color del texto según necesites */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black; 
 }
 
-
-/* Termina el relleno de la barra de progreso */
-
-/* Empieza el estilo del texto dentro de las barras de progreso */
 .progress-bar-fill::before {
     content: attr(data-progress) ;
     position: absolute;
@@ -129,219 +92,198 @@
     font-size: 16px;
 }
 
-/* Termina el estilo del texto dentro de las barras de progreso */
-
-/* Colores personalizados de las barras */
-/* Barra al 100% con texto en color blanco */
 .bar-100 {
     width: 100%;
     background-color: orange;
-    color: white; /* Cambia el color del texto */
+    color: white;
 }
-/* Barra al 75% con texto en color blanco */
+
 .bar-75 {
     width: 75%;
     background-color: green;
-    color: white; /* Cambia el color del texto */
+    color: white; 
 }
-/* Barra al 50% con texto en color blanco */
+
 .bar-50 {
     width: 50%;
     background-color: purple;
-    color: white; /* Cambia el color del texto */
+    color: white;
 }
-/* Barra al 25% con texto en color negro */
+
 .bar-25 {
     width: 25%;
     background-color: deepskyblue;
-    color: white; /* Cambia el color del texto */
+    color: white; 
 }
-/* Fin de los colores personalizados de las barras */
-
-
-
-/* Texto imagen mgl */
-
 .container-fluid {
     position: relative;
 }
 
 .img-fluid {
-    width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 100%; 
+    height: auto;
 }
 
 .overlay {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centra el texto en la imagen */
-    color: white; /* Color del texto */
-    text-align: center; /* Centra el texto */
-    padding: 20px; /* Espacio alrededor del texto */
-    width: 90%; /* Asegura que el texto no se desborde */
+    transform: translate(-50%, -50%); 
+    color: white;
+    text-align: center; 
+    padding: 20px; 
+    width: 90%; 
 }
 
-
-/* boton en imagen inicio*/
 .custom-button {
-    color: white; /* Color de texto por defecto */
-    text-decoration: none; /* Eliminar subrayado */
+    color: white; 
+    text-decoration: none;
 }
 
 .custom-button:hover,
 .custom-button:focus {
-    color: black; /* Cambiar a negro al pasar el mouse o hacer clic */
+    color: black; 
 }
 
 .custom-button:active {
-    color: black; /* Asegurarse de que también cambie al hacer clic */
+    color: black;
 }
 
-
-
-
 .overlay h2 {
-    font-size: 3vw; /* Tamaño de letra del título */
+    font-size: 3vw; 
     margin: 0; 
 }
 
 .overlay p {
-    font-size: 1.8vw; /* Tamaño de letra del párrafo */
+    font-size: 1.8vw; 
 }
-
-
-/* redes sociales */
 
 .social-icons {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente si es necesario */
+    justify-content: center; 
 }
 
 .social-icon {
-    width: 40px; /* Ajuste el tamaño deseado para pantallas grandes */
-    height: auto; /* Mantiene la relación de aspecto */
+    width: 40px; 
+    height: auto; 
 }
 
 @media (max-width: 576px) {
-    /* .social-icons {
-        display: none;
-    } */
     .social-icon {
-        width: 300px; /* Tamaño de las imágenes en pantallas pequeñas */
+        width: 300px; 
     }
 }
 
 
 
-/* my projects */
+
 
 .project-card {
-    border: 1px solid #ccc; /* Borde ligero */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 16px; /* Espaciado interno */
-    text-align: center; /* Centrar texto */
-    transition: transform 0.2s; /* Animación de transformación */
-    height: 100%; /* Asegura que todos los cuadros tengan la misma altura */
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 16px; 
+    text-align: center; 
+    transition: transform 0.2s; 
+    height: 100%; 
     color: #ffff;
 }
 
 .project-card img {
-    height: 200px; /* Altura fija para las imágenes */
-    object-fit: cover; /* Cubre el área sin distorsión */
+    height: 200px; 
+    object-fit: cover; 
 }
 
 .project-card:hover {
-    transform: scale(1.05); /* Escalar al pasar el ratón */
+    transform: scale(1.05); 
 }
 
 .case-study-link {
-    display: inline-block; /* Bloque en línea */
-    margin-top: 10px; /* Espacio arriba */
-    color: #007bff; /* Color del enlace */
-    text-decoration: none; /* Sin subrayado */
+    display: inline-block; 
+    margin-top: 10px; 
+    color: #007bff; 
+    text-decoration: none; 
 }
 
 .case-study-link:hover {
-    text-decoration: underline; /* Subrayar al pasar el ratón */
+    text-decoration: underline; 
 }
 
 
-/* contacc me */
+
 
 .bg-black {
-    background-color: #000; /* Fondo negro */
+    background-color: #000; 
 }
 
 .social-links {
     display: flex;
-    /* Apilar enlaces verticalmente */
-    align-items: flex-start; /* Alinear a la izquierda */
-    gap: 10px; /* Espacio entre enlaces */
+    
+    align-items: flex-start; 
+    gap: 10px; 
 }
 
 .social-icon {
-    color: #fff; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
+    color: #fff; 
+    text-decoration: none; 
 }
 
 .social-section {
-    margin-left: 10px; /* Ajusta según sea necesario */
+    margin-left: 10px; 
 }
 
 .social-icon:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
+    text-decoration: underline; 
 }
 
 footer {
     margin-top: 20px;
     font-size: 14px;
-    color: #aaa; /* Color del texto del pie de página */
+    color: #aaa; 
 }
 
-/* boton imagen */
+
 
 .case-study-link {
-    display: inline-block; /* Para que se comporte como un botón */
-    padding: 10px 20px; /* Espaciado interno */
-    background-color: #007bff; /* Color de fondo */
-    color: white; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, transform 0.3s; 
 }
 
 .case-study-link:hover {
-    background-color: #20c200; /* Color de fondo al pasar el ratón */
-    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+    background-color: #20c200; 
+    transform: scale(1.05); 
 }
 
-/* boton hacia arriba */
+
 
 .back-to-top {
     position: fixed;
     bottom: 20px;
-    left: 50%; /* Alinea al centro */
-    transform: translate(-50%, 0); /* Mantiene el botón centrado en la horizontal */
-    display: none; /* Inicialmente oculto */
-    border: none; /* Sin borde */
-    background: none; /* Sin fondo */
+    left: 50%; 
+    transform: translate(-50%, 0); 
+    display: none; 
+    border: none; 
+    background: none; 
     cursor: pointer;
-    transition: transform 0.3s ease; /* Efecto de aumento */
+    transition: transform 0.3s ease; 
 }
 
 .back-to-top:hover {
-    transform: translate(-50%, 0) scale(1.2); /* Mantiene centrado y aumenta al pasar el ratón */
+    transform: translate(-50%, 0) scale(1.2); 
 }
 
 .back-to-top-icon {
-    width: 50px; /* Ajusta el tamaño del icono según lo necesites */
-    height: auto; /* Mantiene la proporción */
+    width: 50px; 
+    height: auto; 
 }
 
 
-/* caja de mensaje */
+
 
 
 
