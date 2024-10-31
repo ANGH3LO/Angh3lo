@@ -10,7 +10,7 @@ img {
 }
 
 .navbar {
-    background: linear-gradient(to bottom, #76634c  , #9c9083  80%, rgba(0, 95, 115, 0));
+    background: #4f92ff;
 }
     
 .navbar-nav li{
@@ -255,11 +255,9 @@ footer {
 }
 
 .case-study-link:hover {
-    background-color: #20c200; 
+    background-color: #81c1ff; 
     transform: scale(1.05); 
 }
-
-
 
 .back-to-top {
     position: fixed;
@@ -345,9 +343,9 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-
+/* pressb */
 button:hover {
-    background-color: #06c200;
+    background-color: #044b92;
 }
 
  
